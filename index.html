@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Perfis - GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="main__entrada">
+            <input type="text" class="entrada__input" placeholder="Nome de Usuário">
+            <button class="entrada__buscar">Buscar</button>
+        </div>
+
+        <div class="main__carregamento">
+            <div class="spinner"></div>
+            <p class="saida__carregando">Carregando...</p>
+        </div>
+
+        <div class="main__erro">
+            <p class="saida__erro">Erro!</p>
+            <button class="saida__retornar" id="erroButton">Voltar</button>
+        </div>
+
+
+        <div class="main__saida">
+            <div class="saida__div__profile">
+                <img src="assets/data.png" alt="Avatar do Usuário" class="saida__avatar">
+                <div class="profile__div">
+                    <p class="saida__username">Exemplo</p>
+                    <p class="saida__nome">Exemplo da Silva</p>
+                </div>
+            </div>
+            <p class="saida__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellat maxime
+                corporis debitis totam? Obcaecati eligendi a quos architecto inventore soluta, deleniti, id illo, nulla
+                iste qui nam voluptates aliquam!</p>
+            <div class="saida__div">
+                <div class="saida__dados">
+                    <img src="./assets/empresa.png" class="saida__icon">
+                    <div class="dados__div">
+                        <p class="saida__label"> Empresa:</p>
+                        <p class="saida__empresa">Empresa não informada</p>
+                    </div>
+                </div>
+                <div class="saida__dados">
+                    <img src="./assets/repos.png" class="saida__icon">
+                    <div class="dados__div">
+                        <p class="saida__label">Repositórios:</p>
+                        <p class="saida__repos">20</p>
+                    </div>
+                </div>
+                <div class="saida__dados">
+                    <img src="./assets/data.png" class="saida__icon">
+                    <div class="dados__div">
+                        <p class="saida__label">Data da Criação: </p>
+                        <p class="saida__data">01/01/2026</p>
+                    </div>
+                </div>
+            </div>
+            <div class="saida__links">
+                <a href="" class="saida__link" target="_blank">Ver Perfil</a>
+                <button class="saida__retornar" id="saidaButton">Voltar</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
